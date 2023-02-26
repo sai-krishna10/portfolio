@@ -1,0 +1,645 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #3A3B3C;
+    overflow-x: hidden;
+    font-family: sans-serif;
+}
+
+/* Title styling */
+.title {
+    font-size: 35px;
+    color: white;
+}
+
+.title span {
+    font-size: 45px;
+    color: crimson;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+/* Navbar styling */
+.navbar {
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    position: fixed;
+    background-color: black;
+}
+
+.navbar .navitems a {
+    margin: 4vh;
+    text-decoration: none;
+    font-size: 20px;
+    color: crimson;
+}
+
+.navbar .navitems a:hover {
+    color: aliceblue;
+    background-color: crimson;
+    padding: 4px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.navbar .menu {
+    display: none;
+}
+
+/* Home styling */
+.home,
+.skills,
+.projects,
+.educations,
+.contact {
+    padding-top: 12vh;
+    flex-direction: column;
+}
+
+.home .profile {
+    padding: 4vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.home .profile img {
+    height: 35vh;
+    width: 18vw;
+    border-radius: 10px;
+}
+
+.home .profileinfo {
+    margin-left: 30vw;
+}
+
+.home .profileinfo .intro {
+    font-size: 35px;
+    color: aliceblue;
+    margin: 1vh;
+
+}
+
+.home .profileinfo .intro span {
+    color: crimson;
+    margin-left: 2vh;
+}
+
+.home .profileinfo .name {
+    font-size: 60px;
+    margin: 1vh;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.home .profileinfo .field {
+    margin: 1vh;
+    font-size: 35px;
+    color: crimson;
+    font-weight: 600;
+}
+
+.home .profileinfo .icons {
+    display: flex;
+    margin: 1vh;
+}
+
+.home .profileinfo .icons img {
+    height: 6vh;
+    width: 3vw;
+    margin: 1vw;
+    border-radius: 5px;
+}
+
+.home .profileinfo .icons img:hover {
+    cursor: pointer;
+}
+
+
+/* Skills Style*/
+.skills .skill-heading,
+.projects .project-heading,
+.educations .education-heading,
+.contact .contact-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    text-decoration: underline;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration-color: crimson;
+}
+
+.skills .skill-heading span,
+.projects .project-heading span,
+.educations .education-heading span,
+.contact .contact-heading span {
+    color: crimson;
+}
+
+.skills .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 10px solid crimson;
+    height: 25vh;
+    width: 15vw;
+    margin: 30px;
+}
+
+.skills .skill img {
+    height: 15vh;
+    width: 9vw;
+}
+
+.skills .skill .skill-title {
+    color: aliceblue;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.skills .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .skill:hover {
+    background-color: crimson;
+    border-color: aliceblue;
+    cursor: pointer;
+}
+
+
+/* Projects styling */
+.projects .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 10px solid crimson;
+    height: 35vh;
+    width: 40vw;
+    margin: 30px;
+    border-style: double;
+}
+
+.projects .project img {
+    height: 20vh;
+    width: 13vw;
+}
+
+.projects .project .project-title {
+    color: aliceblue;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.projects .projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .project:hover {
+    background-color: crimson;
+    border-color: aliceblue;
+    cursor: pointer;
+
+}
+
+.projects .projects-list .project a {
+    color: cornflowerblue;
+    font-weight: 600;
+}
+
+/* Education styling */
+.educations .education {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 4px solid crimson;
+    height: 30vh;
+    width: 40vw;
+    margin: 30px;
+    border-style: dashed;
+}
+
+.educations .education img {
+    height: 20vh;
+    width: 10vw;
+    margin-right: 4vh;
+}
+
+.educations .education .education-title {
+    color: aliceblue;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.educations .education .education-title .college-name {
+    text-decoration: underline;
+    margin-bottom: 2vh;
+}
+
+.educations .education-list .education,
+.education-title .course {
+    color: blue;
+}
+
+.educations .education-list .education,
+.education-title .branch,
+.cgpa {
+    color: green;
+}
+
+.educations .education-list .education,
+.education-title .branch {
+    color: yellow;
+}
+
+.educations .education-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.educations .education:hover {
+    background-color: crimson;
+    border-color: aliceblue;
+    cursor: pointer;
+
+}
+
+
+
+/* Contact styling */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-info {
+    padding: 30px;
+    background-color: aliceblue;
+    width: 60vw;
+    border-radius: 10px;
+    margin: 5vh;
+    margin-bottom: 20vh;
+}
+
+.contact .contact-info form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-info form input {
+
+    height: 7vh;
+    width: 30vw;
+    padding: 3px;
+    border-radius: 5px;
+    border: 2px solid crimson;
+    font-size: 15px;
+}
+
+.contact .contact-info form input:focus {
+    border: 3px solid crimson;
+}
+
+.contact .contact-info .contact-input {
+    margin: 2vh;
+    display: flex;
+    align-items: center;
+}
+
+.contact .contact-info .contact-input .contact-title {
+    color: crimson;
+    font-weight: 700;
+    width: 7vw;
+}
+
+.contact .contact-info button {
+    padding: 10px;
+    margin: 2vh;
+    border-radius: 5px;
+    width: 15vw;
+    height: 7vh;
+    color: aliceblue;
+    background-color: crimson;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contact-info button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: crimson;
+}
+
+/* Sidebar Styling */
+
+.sidebar {
+    display: none;
+    height: 60vh;
+    width: 80vw;
+    background-color: aliceblue;
+    top: 0;
+    position: fixed;
+}
+
+.sidebar .title {
+    font-size: 20px;
+    color: black;
+}
+
+.sidebar .title span {
+    font-size: 35px;
+}
+
+.sidebar .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar .top .close img {
+    height: 6vh;
+    width: 9vw;
+    margin: 2vh;
+}
+
+.sidebar .top .close img:hover {
+    cursor: pointer;
+}
+
+.sidebar .navitems {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+}
+
+.sidebar .navitems a {
+    margin: 2vh;
+    text-decoration: none;
+    font-size: 20px;
+    color: crimson;
+}
+
+.sidebar .navitems a:hover {
+    color: black;
+    font-weight: 600;
+    width: 35vw;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width:1100px) {
+    .home .profileinfo {
+        margin-left: 25vw;
+    }
+
+    .home .profile img {
+        height: 35vh;
+        width: 22vw;
+        border-radius: 10px;
+    }
+
+    .contact .contact-info {
+        padding: 30px;
+        background-color: aliceblue;
+        width: 70vw;
+        border-radius: 10px;
+        margin: 5vh;
+        margin-bottom: 20vh;
+    }
+
+}
+
+@media only screen and (max-width:960px) {
+    .home .profileinfo {
+        margin-left: 20vw;
+    }
+
+    .home .profile img {
+        height: 35vh;
+        width: 25vw;
+        border-radius: 10px;
+    }
+
+    .contact .contact-info .contact-input .contact-title {
+        margin-right: 5vh;
+    }
+}
+
+@media only screen and (max-width:975px) {
+    .home .profileinfo {
+        margin-left: 16vw;
+    }
+
+    .navbar .navitems a {
+        margin: 3vh;
+        font-size: 16px;
+    }
+
+    .skills .skill {
+        height: 25vh;
+        width: 20vw;
+    }
+}
+
+@media only screen and (max-width:730px) {
+    .home .profileinfo {
+        margin-left: 10vw;
+    }
+
+    .home .profile img {
+        height: 35vh;
+        width: 30vw;
+    }
+
+    .navbar .navitems a {
+        margin: 1vh;
+        font-size: 16px;
+    }
+
+    .home .profileinfo .icons img {
+        height: 6vh;
+        width: 5vw;
+    }
+
+    .skills .skill {
+        height: 25vh;
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width:654px) {
+    .home .profileinfo {
+        margin-left: 6vw;
+    }
+
+    .home .profile img {
+        width: 40vw;
+    }
+
+    .educations .education {
+        width: 60vw;
+    }
+
+    .skills .skill img {
+        height: 15vh;
+        width: 13vw;
+    }
+
+    .contact .contact-info button {
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width:610px) {
+    .home .profileinfo {
+        margin-left: 4vw;
+    }
+
+    .home .profileinfo .name {
+        font-size: 45px;
+    }
+
+    .home .profileinfo .icons img {
+        height: 6vh;
+        width: 7vw;
+    }
+
+    .home .profileinfo .field {
+        font-size: 30px;
+    }
+
+    .navbar .navitems {
+        display: none;
+    }
+
+    .navbar .menu {
+        display: flex;
+    }
+
+    .navbar .menu:hover {
+        cursor: pointer;
+    }
+
+    .navbar .menu img {
+        height: 6vh;
+        width: 7vw;
+    }
+
+    .home .profile img {
+        height: 35vh;
+        width: 50vw;
+    }
+
+    .skills .skill {
+        height: 25vh;
+        width: 35vw;
+    }
+
+    .projects .project {
+        width: 60vw;
+    }
+
+    .contact .contact-info form input {
+        font-size: 10px;
+    }
+
+    .contact .contact-info .contact-input .contact-title {
+        margin-right: 10vh;
+    }
+
+    .projects .project img {
+        height: 20vh;
+        width: 19vw;
+    }
+
+    .educations .education img {
+        height: 20vh;
+        width: 20vw;
+        margin-right: 4vh;
+    }
+
+    .educations .education {
+        width: 70vw;
+    }
+
+    .contact .contact-info form input {
+
+        height: 5vh;
+    }
+
+    .skills .skill img {
+        height: 15vh;
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width:435px) {
+    .skills .skill {
+        height: 25vh;
+        width: 75vw;
+    }
+
+    .home .profileinfo .name {
+        font-size: 35px;
+    }
+
+    .projects .project {
+        width: 80vw;
+    }
+
+    .home .profileinfo .icons img {
+        height: 6vh;
+        width: 9vw;
+    }
+
+    .educations .education {
+        width: 80vw;
+    }
+
+    .home .profile img {
+        width: 70vw;
+    }
+
+    .navbar .menu img {
+        width: 12vw;
+    }
+
+    .skills .skill img {
+        height: 15vh;
+        width: 40vw;
+    }
+}
