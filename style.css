@@ -205,7 +205,7 @@ body {
 
 .projects .project img {
     height: 20vh;
-    width: 13vw;
+    width: 17vw;
 }
 
 .projects .project .project-title {
@@ -583,7 +583,7 @@ body {
 
     .projects .project img {
         height: 20vh;
-        width: 24vw;
+        width: 60vw;
     }
 
     .educations .education img {
@@ -611,10 +611,6 @@ body {
     .skills .skill {
         height: 25vh;
         width: 75vw;
-    }
-    .projects .project img {
-        height: 20vh;
-        width: 40vw;
     }
     .home .profileinfo .name {
         font-size: 35px;
