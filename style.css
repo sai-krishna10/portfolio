@@ -612,7 +612,10 @@ body {
         height: 25vh;
         width: 75vw;
     }
-
+    .projects .project img {
+        height: 20vh;
+        width: 40vw;
+    }
     .home .profileinfo .name {
         font-size: 35px;
     }
