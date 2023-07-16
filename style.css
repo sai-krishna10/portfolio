@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Fira Sans", sans-serif;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #282c33;
+}
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+.menu-nav{
+    display: none;
+    width: 100vw;
+    height: max-content;
+    padding: 30px 10%;
+    justify-content: space-between;
+    background:#282c33;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+.menu-nav .name{
+    font-size: 28px;
+}
+.menu-bar{
+    display: flex;
+    flex-direction: column;  
+}
+.menu-bar a{
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 12px;
+}
+.menu-bar a:hover{
+    font-size: 22px;
+}
+.menu-bar a span{
+    color: blue;
+}
+/* Navbar Styling */
+nav{
+    padding: 30px 5%;
+    justify-content: space-between;
+    background:#282c33;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+h3{
+    color: #fff;
+}
+.right-header ul{
+    display: flex;
+    align-items: center;
+}
+.right-header ul a{
+    margin-right: 12px;
+    cursor: pointer;
+    color: #fff;
+}
+.right-header ul a span{
+    color: blue;
+}
+.right-header ul a:hover{
+    font-size: 22px;
+}
+
+/* Home Styling */
+
+.home{
+    padding: 60px 10%;
+    justify-content: space-between;
+}
+.home .right-home{
+    padding: 5px;
+    border: 1px solid #fff;
+    width: fit-content;
+    margin-left: 20px;
+}
+.home .right-home h3{
+    text-align: center;
+    padding: 2px;
+    border: 1px solid blue;
+    font-weight: 500;
+}
+.home .right-home h3 span{
+    color: blue;
+}
+.home .right-home img{
+    width:250px;
+}
+.home .left-home{
+    color: #fff;
+}
+.home .left-home h1{
+    font-size: 36px;
+}
+.home .left-home h1 span{
+    color: blue;
+}
+.home .left-home h2{
+    font-size: 28px;
+    padding-top: 5px;
+}
+.home .left-home li{
+    font-size: 16px;
+    padding-top: 5px;
+}
+.icons{
+    padding-top: 15px;
+    display: flex;
+}
+.icons a{
+    padding-right: 15px;
+}
+.icons a i{
+    color: #fff;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
+.icons a i:hover{
+    color: blue;
+}
+
+/* Porjects Styling */
+.projects,.skills,.education,.aboutme,.contactme{
+    padding: 60px 10%;
+}
+.heading{
+    margin: 0 0 20px 0;
+}
+.heading h1{
+    color: #fff;
+    font-size: 24px;
+}
+.heading h1 span{
+    color: blue;
+}
+.heading hr{
+    width:30vw;
+    height: 2px;
+    border: 2px solid blue;
+    margin-left: 15px;
+}
+.projects .project-cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: center;
+}
+.projects .project-cards .project-card{
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 40px rgba(128, 128, 128, 0.4);
+}
+.projects .project-cards .project-card img{
+    width:280px;
+}
+.projects .project-cards .project-card h3{
+    text-align: center;
+    font-size: 22px;
+    margin: 15px;
+}
+.projects .project-cards .project-card .live{
+    padding: 8px 15px;
+    border: 2px solid rgb(162, 241, 162);
+    background: rgb(162, 241, 162);
+    margin: 25px;
+    width: fit-content;
+}
+.projects .project-cards .project-card .live a{
+    color: #282c33;
+}
+.projects .project-cards .project-card h4{
+    color: #fff;
+}
+.projects .project-cards .project-card h4 span{
+    color: blue;
+}
+.projects .project-cards .project-card .live a:hover{
+    color: red;
+}
+
+/* Skills Styling */
+.skills .skill-cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    justify-content: center;
+}
+.skills .skill-cards .skill-card{
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 0 10px rgba(153, 152, 152, 0.4);
+    margin: 20px;
+    cursor: pointer;
+}
+.skills .skill-cards .skill-card img{
+    width: 100px;
+}
+.skills .skill-cards .skill-card h4{
+    color: #fff;
+    padding-left: 20px;
+    font-size: 16px;
+}
+
+/* Education Styling */
+.education-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+.education-cards .education-card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(134, 134, 134, 0.4);
+    margin: 20px;
+    padding: 5px;
+    cursor: pointer;
+}
+.education-cards .education-card img{
+    width: 250px;
+    margin-bottom: 20px;
+}
+.education-cards .education-card h2{
+    color: blue;
+    font-size: 18px;
+    padding: 3px;
+}
+.education-cards .education-card h3{
+    font-size: 16px;
+    padding: 3px;
+}
+.education-cards .education-card h4{
+    font-size: 16px;
+    padding: 3px;
+    color: green;
+}
+
+
+/* Aboutme styling */
+.aboutme .aboutme-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.aboutme .aboutme-card .aboutme-right{
+    padding: 5px;
+    width: fit-content;
+    box-shadow: 0 0 50px rgba(150, 149, 149, 0.4);
+    margin-left: 20px;
+}
+.aboutme .aboutme-card .aboutme-right img{
+    width: 250px;
+}
+.aboutme .aboutme-card .aboutme-left h3{
+    text-align-last: first;
+    font-size: 18px;
+    font-weight: 400;
+}
+.contact{
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #fff;
+    width: fit-content;
+    box-shadow: 0 0 40px rgba(165, 161, 161, 0.4);
+}
+.contact p span{
+color: blue;
+}
+.contact p{
+    color: #fff;
+}
+
+
+/* Contactme Styling */
+
+.contact-form{
+    background: #fff;
+    padding:20px;
+    width: fit-content;
+    margin: 20px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 40px rgba(212, 210, 210, 0.4);
+}
+
+.contact-form input,textarea{
+    padding: 5px;
+    width: 30vw;
+    margin: 10px;
+}
+textarea{
+    height: 20vh;
+}
+button{
+    padding: 10px 40px;
+    background: green;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+}
+button:hover{
+    color: green;
+    border: 2px solid green;
+    background: #fff;
+    cursor: pointer;
+}
+.menu {
+    display: none;
+}
+
+@media (max-width:872px){
+    .home{
+        padding: 20px 20px;
+    }
+    .projects,.skills,.education,.aboutme,.contactme{
+        padding: 20px 20px;
+    }
+    .right-header{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        cursor: pointer;
+    }
+    .left-header h3{
+        font-size: 26px;
+    }
+}
+@media (max-width:742px){
+    .home{
+        padding: 10px 10px;
+    }
+    .projects,.skills,.education,.aboutme,.contactme{
+        padding: 10px 10px;
+    }
+}
+@media (max-width:600px){
+    .home{
+        flex-direction: column-reverse;
+    }
+    .home .left-home{
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    .aboutme-card{
+        flex-direction: column-reverse;
+    }
+    .aboutme-card .aboutme-left{
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+}
